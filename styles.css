@@ -1,0 +1,164 @@
+/* Resetear estilos por defecto */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    /* Estilos para el encabezado */
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ff00ea;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .logo img {
+    height: 80px;
+    border-radius: 50%;
+    }
+    
+    .search-box {
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .search-box input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    }
+    
+    .search-box button {
+    background-color: #3483FA;
+    color: #FFF;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    }
+    
+    nav ul {
+    display: flex;
+    }
+    
+    nav li {
+    margin-right: 20px;
+    }
+    
+    nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    }
+    
+    nav a:hover {
+    color: #3483FA;
+    }
+    
+    /* Estilos para el cuerpo de la página */
+    main {
+    padding: 20px;
+    background-color: #F2F2F2;
+    }
+    
+    .carousel {
+    /* Aquí irían los estilos para el carrusel */
+    }
+    
+    .categories {
+    margin-top: 50px;
+    }
+    
+    .categories h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    }
+    
+    .category-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 20px;
+    }
+    
+    .category-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .productos-destacados {
+        display: flex;
+        overflow-x: scroll;
+        white-space: nowrap;
+      }
+      
+      .producto {
+        flex: 0 0 auto;
+        margin-right: 20px;
+        width: 250px;
+      }
+      
+      .producto img {
+        width: 100%;
+      }
+      
+      .producto h3 {
+        font-size: 1.2em;
+        margin: 10px 0;
+      }
+      
+      .producto p {
+        color: gray;
+        font-size: 0.9em;
+      }
+      
+    
+    .sponsored-products {
+    /* Aquí irían los estilos para los productos patrocinados */
+    }
+    
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #FFF;
+  }
+  
+  footer nav ul {
+    display: flex;
+  }
+  
+  footer nav li {
+    margin-right: 20px;
+  }
+  
+  footer nav a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  footer nav a:hover {
+    text-decoration: underline;
+  }
+  
