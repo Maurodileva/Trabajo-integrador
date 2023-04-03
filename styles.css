@@ -5,16 +5,21 @@
     padding: 0;
     box-sizing: border-box;
     }
-    /* Estilos para el encabezado */
+
+    p{
+        color: #FFF;
+    }
+      
+
     header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #ff00ea;
+    background-color: #b100a2;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-    
+    }      
+
     .logo img {
     height: 80px;
     border-radius: 50%;
@@ -66,10 +71,12 @@
     
     /* Estilos para el cuerpo de la página */
     main {
-    padding: 20px;
-    background-color: #F2F2F2;
+        padding: 20px;
+        background-image: url(fondo\ negro.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
     }
-    
     .carousel {
     /* Aquí irían los estilos para el carrusel */
     }
@@ -87,20 +94,47 @@
     }
     
     .category-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #FFF;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    text-align: center;
-    transition: all 0.2s ease-in-out;
-    margin-bottom: 20px;
+        width: 800px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #FFF;
+        box-shadow: 0 2px 4px rgba(2, 2, 2, 0.2);
+        border-radius: 10px;
+        text-align: left;
+        transition: all 0.2s ease-in-out;
+        margin-bottom: 20px;
+      }
+    
+    #remeras {
+        background-image: url('remeras.png');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
+    #pantalones {
+        background-image: url('pantalones.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: right;
+        clear: right;
+    }
+
+    .col:nth-child(3) .category-box {
+        clear: both;
+      }
+      
+
+    #abrigos {
+        background-image: url('abrigos.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .category-box:hover {
-    transform: translateY(-5px);
+    transform: translateY(-7px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     }
     
@@ -114,10 +148,16 @@
         flex: 0 0 auto;
         margin-right: 20px;
         width: 250px;
+        background-color: #FFF;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        text-align: center;
       }
       
       .producto img {
         width: 100%;
+        border-radius: 10px;
       }
       
       .producto h3 {
