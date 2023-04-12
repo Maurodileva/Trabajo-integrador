@@ -1,5 +1,7 @@
 /* Resetear estilos por defecto */
 
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pacifico&display=swap');
+
  * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,6 @@
     p{
         color: #FFF;
     }
-      
 
     header {
     display: flex;
@@ -57,28 +58,61 @@
     
     nav li {
     margin-right: 20px;
+    list-style: none;
     }
     
     nav a {
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #6d087a;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
     }
     
     nav a:hover {
-    color: #3483FA;
+    color: #d900e0;
     }
+
+    
+    a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .box-portada{
+      background-image: url(modelo\ portada.jpg);
+      width: 100%;
+      height: 800px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    #decoracion{
+      height: 100%;
+      padding-left: 1200px;
+    }
+
+    #titulo-portada {
+      max-width: 400px;
+      position: absolute;
+      top: 45%;
+      transform: translateY(-50%);
+      margin-left: 120px;
+      font-size: 90px;
+      color: #000000;
+      font-family: 'Kaushan Script', cursive;
+    }
+    
     
     /* Estilos para el cuerpo de la página */
     main {
-        padding: 20px;
+        padding: 20px 200px 10px 200px;
         background-image: url(fondo\ negro.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-    }
-    .carousel {
-    /* Aquí irían los estilos para el carrusel */
     }
     
     .categories {
@@ -112,6 +146,9 @@
         background-image: url('remeras.png');
         background-repeat: no-repeat;
         background-size: cover;
+        justify-content: center;
+        font-size: 250%;
+        color: #FFF;
     }
     
     #pantalones {
@@ -120,6 +157,9 @@
         background-size: cover;
         float: right;
         clear: right;
+        justify-content: center;
+        font-size: 250%;
+        color: #FFF;
     }
 
     .col:nth-child(3) .category-box {
@@ -131,6 +171,9 @@
         background-image: url('abrigos.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        justify-content: center;
+        font-size: 250%;
+        color: #FFF;
     }
 
     .category-box:hover {
@@ -147,7 +190,6 @@
       .producto {
         flex: 0 0 auto;
         margin-right: 20px;
-        width: 250px;
         background-color: #FFF;
         border-radius: 10px;
         padding: 20px;
@@ -169,11 +211,6 @@
         color: gray;
         font-size: 0.9em;
       }
-      
-    
-    .sponsored-products {
-    /* Aquí irían los estilos para los productos patrocinados */
-    }
     
 footer {
     display: flex;
