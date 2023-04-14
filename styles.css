@@ -91,15 +91,16 @@
 
     #decoracion{
       height: 100%;
-      padding-left: 1200px;
+      padding-left:80%;
     }
 
     #titulo-portada {
+      margin-top: 30%;
       max-width: 400px;
       position: absolute;
-      top: 45%;
+      
       transform: translateY(-50%);
-      margin-left: 120px;
+      margin-left: 15%;
       font-size: 90px;
       color: #000000;
       font-family: 'Kaushan Script', cursive;
@@ -219,6 +220,7 @@ footer {
     padding: 20px;
     background-color: #333;
     color: #FFF;
+    
   }
   
   footer nav ul {
@@ -237,5 +239,20 @@ footer {
   
   footer nav a:hover {
     text-decoration: underline;
+  }
+  .error{
+    color: #b82e2e;
+    
+    border: 1px solid#b82e2e;
+  }
+  #formulario_contacto{
+    width: 500px;
+    
+  }
+  #nombre{
+    margin-left: 67px;
+  }
+  #tipo_solicitud{
+    margin-left: 32px;
   }
   
